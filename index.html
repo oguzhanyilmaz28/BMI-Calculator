@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="BMI">
+      <h2>BMI Calculator</h2>
+      <form>
+        <label for="fname">Weight</label>
+        <input type="number" class="winput" id="winput" value="" /><br />
+        <label for="lname">Height</label>
+        <input type="number" class="hinput" id="hinput" value="" /><br /><br />
+        <button class="calculate" value="calculate" id="calculate">
+          Calculate
+        </button>
+        <button class="reset" value="reset" id="reset">Reset</button>
+        <input type="text" class="calculator-input" id="result" disabled />
+      </form>
+    </div>
+    <div class="BMI-Information">
+      <h2>BODY MASS INDEX</h2>
+      <img src="image/vucut-kitle-indeksi.png" />
+    </div>
+    <div class="message" id="message" role="alert">
+      <h4>Important!</h4>
+      <p>
+        For your health, it is ideal for women to consume 2 portions of fruit
+        per day, and for men to consume 3 portions.
+      </p>
+      <hr />
+      <p>
+        About 3 liters of water should be consumed per day for men and about 2
+        liters for women.
+      </p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
